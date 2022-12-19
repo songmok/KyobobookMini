@@ -14,8 +14,10 @@ import requests from "./api/request";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
+  const [home, setHome] = useState([]);
   const [novel, setNovel] = useState([]);
   const [cook, setCook] = useState([]);
+
 
   const fetchData = async () => {
     // 멤버목록 가져오기
@@ -23,6 +25,8 @@ const App = () => {
       start: 1,
       count: 5,
     };
+    const resultHome = await instance.get(requests.fetchHome, { params });
+    setHome(resultHome.data);
     const resultNovel = await instance.get(requests.fetchNovel, { params });
     setNovel(resultNovel.data);
     const resultCook = await instance.get(requests.fetchCook, { params });
@@ -40,7 +44,7 @@ const App = () => {
       <div className="container">
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home home={home} />} />
           <Route path="/novel" element={<Novel novel={novel} />} />
           <Route path="/cook" element={<Cook cook={cook} />} />
           <Route path="/health" element={<Health />} />
