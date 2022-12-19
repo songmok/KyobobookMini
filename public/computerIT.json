@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "biTitle": "책제목1",
+    "biPrice": "1,5000",
+    "biImgSeq": "이미지1",
+    "biWiSeq": "저자기본키",
+    "biPublisher": "출판사명",
+    "biPublishDt": "2022,01,02",
+    "biDePrice": "배송비",
+    "biContentTitle": "책소개(간략)",
+    "biContentText": "책소개(상세)"
+  },
+  {
+    "id": 2,
+    "biTitle": "책제목2",
+    "biPrice": "1,5000",
+    "biImgSeq": "이미지2",
+    "biWiSeq": "저자기본키",
+    "biPublisher": "출판사명",
+    "biPublishDt": "2022,01,02",
+    "biDePrice": "배송비",
+    "biContentTitle": "책소개(간략)",
+    "biContentText": "책소개(상세)"
+  },
+  {
+    "id": 3,
+    "biTitle": "책제목3",
+    "biPrice": "1,5000",
+    "biImgSeq": "이미지3",
+    "biWiSeq": "저자기본키",
+    "biPublisher": "출판사명",
+    "biPublishDt": "2022,01,02",
+    "biDePrice": "배송비",
+    "biContentTitle": "책소개(간략)",
+    "biContentText": "책소개(상세)"
+  },
+  {
+    "id": 4,
+    "biTitle": "책제목4",
+    "biPrice": "1,5000",
+    "biImgSeq": "이미지4",
+    "biWiSeq": "저자기본키",
+    "biPublisher": "출판사명",
+    "biPublishDt": "2022,01,02",
+    "biDePrice": "배송비",
+    "biContentTitle": "책소개(간략)",
+    "biContentText": "책소개(상세)"
+  },
+  {
+    "id": 5,
+    "biTitle": "책제목5",
+    "biPrice": "1,5000",
+    "biImgSeq": "이미지5",
+    "biWiSeq": "저자기본키",
+    "biPublisher": "출판사명",
+    "biPublishDt": "2022,01,02",
+    "biDePrice": "배송비",
+    "biContentTitle": "책소개(간략)",
+    "biContentText": "책소개(상세)"
+  }
+]

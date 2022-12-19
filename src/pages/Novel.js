@@ -1,10 +1,19 @@
 import React from "react";
 
-const Novel = () => {
+const Novel = (props) => {
+  const list = props.novel.map((item, index) => {
+    return (
+      <div>
+        <p>{item.biTitle}</p>
+        <p>{item.biPrice}</p>
+        <p>{item.biPublisher}</p>
+        <p>{item.biPublishDt}</p>
+      </div>
+    );
+  });
   return (
-    <div>
-      <h2>소설</h2>
-      <p>소설 전체목록</p>
+    <div className="novel-box">
+      <div>{list}</div>
     </div>
   );
 };

@@ -1,10 +1,19 @@
 import React from "react";
 
-const Cook = () => {
+const Cook = (props) => {
+  const list = props.cook.map((item, index) => {
+    return (
+      <div>
+        <p>{item.biTitle}</p>
+        <p>{item.biPrice}</p>
+        <p>{item.biPublisher}</p>
+        <p>{item.biPublishDt}</p>
+      </div>
+    );
+  });
   return (
-    <div>
-      <h2>요리</h2>
-      <p>요리 전체목록</p>
+    <div className="cook-box">
+      <div>{list}</div>
     </div>
   );
 };
