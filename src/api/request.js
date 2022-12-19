@@ -9,5 +9,7 @@ const requests = {
   fetchLanguage: "/language.json",
   // 컴퓨터/IT목록
   fetchComputerIT: "/computerIT.json",
+  // 디테일 목록
+  fetchDetail: "/detail.json",
 };
 export default requests;
