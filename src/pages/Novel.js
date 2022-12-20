@@ -12,7 +12,10 @@ const Novel = (props) => {
     );
   });
   return (
-    <div className="novel-box">
+    <div>
+      <div className="header-bt">
+        <h2 className="header-txt">소설</h2>
+      </div>
       <div>{list}</div>
     </div>
   );

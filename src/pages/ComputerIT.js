@@ -3,8 +3,10 @@ import React from "react";
 const ComputerIT = () => {
   return (
     <div>
-      <h2>컴퓨터/IT</h2>
-      <p>컴퓨터/IT 전체목록</p>
+      <div className="header-bt">
+        <h2 className="header-txt">컴퓨터/IT</h2>
+      </div>
+      <div>리스트</div>
     </div>
   );
 };

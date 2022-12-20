@@ -3,8 +3,10 @@ import React from "react";
 const Health = () => {
   return (
     <div>
-      <h2>건강</h2>
-      <p>건강 전체목록</p>
+      <div className="header-bt">
+        <h2 className="header-txt">건강</h2>
+      </div>
+      <div>리스트</div>
     </div>
   );
 };

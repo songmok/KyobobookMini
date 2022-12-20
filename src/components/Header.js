@@ -5,7 +5,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   return (
     <div className="header">
-      <Link className="logo">
+      <Link className="logo" to={"/"}>
         <img
           src={`${process.env.PUBLIC_URL}/img/logo.png`}
           className="logo-img"
@@ -23,8 +23,37 @@ const Header = () => {
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </div>
       </div>
-      <div className="header-bt">HOME</div>
+      <nav className="nav">
+        <ul className="gnb">
+          <li className="depth">
+            <Link className="btn-success" to="/novel">
+              소설
+            </Link>
+          </li>
+          <li className="depth">
+            <Link className="btn-success" to="/cook">
+              요리
+            </Link>
+          </li>
+          <li className="depth">
+            <Link className="btn-success" to="/health">
+              건강
+            </Link>
+          </li>
+          <li className="depth">
+            <Link className="btn-success" to="/language">
+              외국어
+            </Link>
+          </li>
+          <li className="depth">
+            <Link className="btn-success" to="/computerit">
+              컴퓨터/IT
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
+  return <div className="header-bt"></div>;
 };
 export default Header;

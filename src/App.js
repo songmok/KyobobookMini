@@ -7,7 +7,6 @@ import Health from "./pages/Health";
 import Language from "./pages/Language";
 import ComputerIT from "./pages/ComputerIT";
 import Detail from "./components/Detail";
-
 // // axios api
 import instance from "./api/axios";
 import requests from "./api/request";
@@ -31,7 +30,6 @@ const App = () => {
     setCook(resultCook.data);
     const resultDetail = await instance.get(requests.fetchDetail, { params });
     setDetail(resultDetail.data);
-
     // setMembers();
     // setSongs();
   };
