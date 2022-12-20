@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+
 
 const Home = () => {
   return (
@@ -23,8 +23,24 @@ const Home = () => {
       </div> */}
       <div className="header-bt">
         <div className="header-txt">HOME</div>
+
+const Home = (props) => {
+  const list = props.home.map((item, index) => {
+    return (
+      <div>
+        <div className="list-img">
+          <img src={item.biImgSeq} alt={item.biTitle} />
+          <img src={item.biImgSeq} alt={item.biTitle} />
+          <img src={item.biImgSeq} alt={item.biTitle} />
+          
+        </div>
+       
       </div>
-      <Outlet />
+    );
+  });
+  return (
+    <div className="home-box">
+      <div>{list}</div>
     </div>
   );
 };

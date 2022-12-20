@@ -1,4 +1,6 @@
 const requests = {
+  // 홈목록
+  fetchHome: "/home.json",
   // 소설목록
   fetchNovel: "/novel.json",
   // 요리목록
